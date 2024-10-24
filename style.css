@@ -1,42 +1,33 @@
-
-h1 {
-    color: red;
-    font-size: 55px;
+html
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-h1::after {
-    content: " После ";
+.body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 147px;
 }
 
-h1::first-letter {
-    color:blue;
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 147px;
+    background-color: grey;
 }
 
-h1::before {
-    content: "До ";
+.main {
+    flex: 1 0 auto;
+    background-color: greenyellow;
 }
 
-p::first-line {
-    color:brown;
-}
-
-#title{
-    font-size: 50px;
-}
-
-.page-title {
-    font-size: 20px;
-}
-
-.page-title,
-#title {
-    border: 1px solid green;
-}
-
-.btn {
-    background-color: transparent;
-}
-
-.btn--red {
-    background-color: red;
+.page-footer {
+    flex: 0 0 auto;
+    background-color: blueviolet;
 }
