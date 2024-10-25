@@ -68,8 +68,40 @@ body {
 .page-header__nav-link:hover,
 .page-header__nav-link:active {
     color: #BC3324;
-
 }
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid #1F1E1E;
+    border-radius: 0;
+    outline: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    color:#1F1E1E;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #1F1E1E;
+    color: #ffffff;
+}
+
+.page-header__right-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 202px;
+}
+
+
 .main {
     flex: 1 0 auto;
     background-color: greenyellow;
