@@ -94,6 +94,56 @@ body {
     color: #ffffff;
 }
 
+.events__listing {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    max-width: 1414px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+}
+
+.section-title {
+
+}
+
+.event-card {
+    display: flex;
+    width: 405px;
+    max-width: 100%;
+    min-width: 280px;
+}
+
+.event-card__link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    width: 100%;
+    color: #1F1E1E;
+}
+
+.event-card__link:hover .event-card__title {
+    color: #BC3324;
+    text-decoration-color: #BC3324;
+}
+
+.event-card__picture {
+    display: block;
+    margin: 0 0 25px;
+    position: relative;
+    width: 100%;
+    font-size: 0;
+}
+
+.event-card__picture::after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 107.16%;
+}
+
 .page-header__right-block {
     display: flex;
     justify-content: flex-end;
