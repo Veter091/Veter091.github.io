@@ -45,10 +45,6 @@ body {
     text-decoration: none;
 }
 
-.page-header__logo-icon {
-    weight: 100%;
-    height: 100%;
-}
 
 .page-header__nav {
     display: flex;
@@ -116,9 +112,6 @@ body {
     margin: 0 auto;
 }
 
-.section-title {
-
-}
 
 .event-card {
     display: flex;
