@@ -41,17 +41,20 @@
 .page-header__container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 1414px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1414px;
-  width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .page-header__nav {
   display: -webkit-box;
