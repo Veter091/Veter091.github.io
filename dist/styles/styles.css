@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "mak";
+  src: local("MAK-bold"), url("../assets/fonts/MAK-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mak";
+  src: local("MAK-light"), url("../assets/fonts/MAK-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -73,6 +85,7 @@
   color: #1F1E1E;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
+  font-family: "mak", serif;
 }
 .page-header__nav-link:hover {
   color: #BC3324;
