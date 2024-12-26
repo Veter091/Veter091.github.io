@@ -105,6 +105,105 @@ textarea:focus::placeholder {
   font-size: 16px;
   line-height: 1.375;
 }
+.field__input {
+  height: 55px;
+  padding: 17px 20px 16px;
+}
+.field__textarea {
+  height: 150px;
+  padding: 20px;
+}
+.field__label {
+  display: block;
+  margin: 0 0 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #1F1E1E;
+}
+.field__title {
+  margin: 0 0 10px;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #1F1E1E;
+}
+.field__select {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  background-color: #fff;
+  height: 55px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #1F1E1E;
+}
+.pp {
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 90px 40px 50px;
+  background-color: rgba(128, 128, 128, 0.98);
+  overflow-y: auto;
+  z-index: 110;
+}
+.pp__wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 1210px;
+  margin: auto;
+  background-color: #6c6c6c;
+  background-position: 0 0;
+  background-size: auto;
+  -webkit-box-shadow: 0px 0px 30px rgba(31, 31, 30, 0.55);
+          box-shadow: 0px 0px 30px rgba(31, 31, 30, 0.55);
+}
+@supports ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
+  .pp__wrapper {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+.pp__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 40px 40px;
+}
+.pp__title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -40px 0 70px -85px;
+}
 .page-header {
   position: fixed;
   top: 0;
