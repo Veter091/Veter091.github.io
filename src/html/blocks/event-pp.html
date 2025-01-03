@@ -10,6 +10,28 @@
             <div class="pp__container">
                 <h2 class="pp__title">Заполните форму<br />и мы подберем площадку</h2>
                 <form class="pp__form form">
+                    <div class="radio">
+                        <label class="radio__item">
+                            <input type="radio" name="format" value="master-class" class="radio__input"/>
+                            <span class="radio__marker"></span>
+                            <span class="radio__label">Мастер-класс/Семинар</span>
+                        </label>
+                        <label class="radio__item">
+                            <input type="radio" name="format" value="concert" class="radio__input"/>
+                            <span class="radio__marker"></span>
+                            <span class="radio__label">Концерт/Выступление</span>
+                        </label>
+                        <label class="radio__item">
+                            <input type="radio" name="format" value="pokaz" class="radio__input"/>
+                            <span class="radio__marker"></span>
+                            <span class="radio__label">Выставка/Показ</span>
+                        </label>
+                        <label class="radio__item">
+                            <input type="radio" name="format" value="other" class="radio__input"/>
+                            <span class="radio__marker"></span>
+                            <span class="radio__label">Другое</span>
+                        </label>
+                    </div>
                     <label class="field">  
                     <span class="field__label">Имя</span>
                     <input
@@ -31,6 +53,7 @@
                     <option value="1000">более 500 человек</option>
                 </select>
             </label>
+
         </form>
     </div>
 </div>
