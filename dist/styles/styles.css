@@ -64,21 +64,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15px 40px;
   background-color: transparent;
   text-decoration: none;
+  text-align: center;
   border: 1px solid #1F1E1E;
   border-radius: 0;
-  outline: 0;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.3;
-  color: #1F1E1E;
+  outline: none;
   -webkit-transition: background-color 0.2s, color 0.2s;
   transition: background-color 0.2s, color 0.2s;
 }
@@ -104,6 +98,7 @@ body {
   width: 100%;
   background-color: #fff;
   border-radius: 5px;
+  border: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.375;
@@ -145,12 +140,37 @@ body {
   line-height: 1.3;
   color: #1F1E1E;
 }
+.field__date-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.field__date-input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  width: 55px;
+  height: 55px;
+  padding: 17px 13px 16px;
+}
+.field__date-input--w110 {
+  width: 110px;
+}
 .form__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px 60px;
 }
 .form__field {
   width: 100%;
@@ -158,11 +178,55 @@ body {
 .form__field--w50 {
   width: calc(50% - 30px);
 }
+.form__field--mb30 {
+  margin-bottom: 30px;
+}
 .form__group {
   width: 100%;
 }
 .form__group--w50 {
   width: calc(505 - 30px);
+}
+.form__title {
+  margin: 0 0 10px;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #1F1E1E;
+}
+.form__secction {
+  margin-bottom: 50px;
+}
+.form__btns {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form__btn {
+  max-width: 400px;
+  width: 100%;
+}
+.form__btn-close {
+  margin-left: 200px;
+  border: none;
+  padding: 10px 15px;
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #1F1E1E;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.form__btn-close:hover,
+.form__btn-close:active {
+  color: #BC3324;
 }
 .pp {
   display: none;
