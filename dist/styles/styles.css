@@ -468,6 +468,9 @@ body {
   padding-right: 40px;
   margin: 0 auto;
 }
+.article__container {
+  max-width: 880px;
+}
 .content {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -590,8 +593,11 @@ body {
   text-decoration-color: transparent;
 }
 .content blockquote {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 25px 0 30px;
   position: relative;
+  padding: 10px 0 10px 25px;
   font-weight: 600;
   font-style: normal;
   color: #1F1E1E;
@@ -604,6 +610,31 @@ body {
   bottom: 0;
   width: 4px;
   background-color: #BC3324;
+}
+.content figure img {
+  margin: 0;
+  display: block;
+  width: 100%;
+}
+.content figcaption {
+  margin: 15px 0 0;
+  text-align: left;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.3;
+  color: #1F1E1E;
+}
+.content img[align] {
+  margin: 5px 0;
+}
+.content img[align] + figcaption {
+  display: none;
+}
+.content img[align="right"] {
+  margin-left: 10px;
+}
+.content img.alignright {
+  float: right;
 }
 .page-header {
   position: fixed;
