@@ -90,6 +90,7 @@
             display: inline-block;
             min-width: 20px;
             color: @red;
+            white-space: pre;
         }
     }
     ol > li, ul > li {
@@ -154,8 +155,14 @@
         &[align="right"] {
             margin-left: 10px;
         }
-        &.alignright {
+        &.alignright,
+        &[align="right"] {
             float: right;
+        }
+        &.alignleft,
+        &[align="left"] {
+            margin-right: 10px;
+            float: left;
         }
     }
 }

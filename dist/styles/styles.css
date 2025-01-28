@@ -577,6 +577,7 @@ body {
   display: inline-block;
   min-width: 20px;
   color: #BC3324;
+  white-space: pre;
 }
 .content ol > li,
 .content ul > li {
@@ -633,8 +634,14 @@ body {
 .content img[align="right"] {
   margin-left: 10px;
 }
-.content img.alignright {
+.content img.alignright,
+.content img[align="right"] {
   float: right;
+}
+.content img.alignleft,
+.content img[align="left"] {
+  margin-right: 10px;
+  float: left;
 }
 .page-header {
   position: fixed;
