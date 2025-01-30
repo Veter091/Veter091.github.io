@@ -471,6 +471,71 @@ body {
 .article__container {
   max-width: 880px;
 }
+.about__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1414px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
+.about__block {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-areas: "pic pic2" "title pic2" "text text";
+  gap: 50px 60px;
+}
+.about__picture {
+  grid-area: pic;
+}
+.about__subtitle {
+  grid-area: title;
+  margin: 50px 0 0;
+  font-size: 44px;
+}
+.about__text {
+  grid-area: text;
+  margin: 0;
+  margin-left: auto;
+  max-width: 870px;
+}
+.about__picture2 {
+  grid-area: pic2;
+  align-self: flex-end;
+}
+.about__block3-picture {
+  display: block;
+  max-width: 930px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding: 18px 19px 0 49px;
+}
+.about__block3-picture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64.7%;
+  background-color: #BC3324;
+}
+.about__block3-picture::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 40.86%;
+}
+.about__block3-img {
+  position: absolute;
+  top: 19px;
+  left: 49px;
+  width: calc(100 - 57px);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .content {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
