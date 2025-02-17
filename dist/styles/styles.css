@@ -58,6 +58,9 @@ body {
   padding-top: 147px;
   font-family: "Open Sans", sans-serif;
 }
+.btn-red {
+  background-color: red;
+}
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
