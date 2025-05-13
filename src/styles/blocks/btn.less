@@ -1,18 +1,60 @@
+// Мои попытки победить кнопки
+
 .btn {
     display: inline-flex;
     justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     padding: 15px 40px;
     background-color: transparent;
     text-decoration: none;
     text-align: center;
-    border: 1px solid #1F1E1E;
+    border: 1px solid #1f1e1e;
     border-radius: 0;
     outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    color:  #1f1e1e;
     transition: background-color 0.2s, color 0.2s;
-    &--red {
-    background-color: #BC3324;
-     border-color: #BC3324;
-     color: #ffffff; 
-}
+    &:hover{
+    background-color: #1f1e1e;
+    color: #FFFF;
+    }
+    &:active{
+    background-color: #1f1e1e;
+    color: #FFFF;
+    }
+    &-orange{
+        background-color: @red;
+        border: none;
+        color: @white;
+        transition: background-color 0.2s;
+    }
+    &-orange:hover,
+    &-orange:active{
+        background-color: @red_dark;
+    }
+
+    &-arrowdown{
+        margin-top: 8px;
+    }
+    &-arrowdown:hover,
+    &-orange:active{
+        opacity: 0.3;
+    }
+
+    &--tickets{
+        width: 405px;
+        height: 52px;
+        font-family: @font1;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: @red;
+        color: @white;
+        padding: 15px 23px;
+        font-weight: 400;
+        border: none;
+      }
+
 }

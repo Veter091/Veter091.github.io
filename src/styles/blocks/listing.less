@@ -1,0 +1,80 @@
+.listing{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  &__events-list{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      @media @bw1660{
+        gap: 40px;
+      }
+      @media @bw1020{
+        gap: 30px;
+      }
+  }
+  &__event-card{
+      width: calc(33.333% - 40px); //33% чтобы вмещалось три карточки в контейнер. 
+                                   //40px - отступ делим на количество карточек.
+      @media @bw1660{
+        width: calc(33.333% - 26.666px);
+      }
+      @media @bw1020{
+        width: calc(50% - 15px); //50% чтобы вмещалось две карточки в контейнер.
+      }
+      @media @bw650{
+        width: 100%; //100% - одна карточка.
+      }
+  }
+  &__link{
+      display: flex;
+      align-self: flex-end;
+      text-decoration: none;
+      transition: color 0.2s;
+      &:hover{
+          color: @red;
+      }
+  }
+
+  &__showmore{
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;
+    flex-direction: column;
+    
+    &--text{
+      font-family: @font1;
+      font-weight: 600;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: @black;
+      margin-top: 71px;
+    }
+  }
+
+
+  &__title{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    @media @bw1660{
+      margin-top: 130px;
+      margin-bottom: 130px;
+    }
+    @media @bw768{
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    @media @bw320{
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+  }
+
+}
+

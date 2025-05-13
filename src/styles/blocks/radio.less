@@ -1,45 +1,57 @@
-.radio {
+.radio { //Радио кнопки - выбор из нескольких вариантов.
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    &__item {
-        position: relative;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        padding-left: 23px;
-        min-height: 23px;
-        color: @black ;
-        cursor: pointer;
+    align-items: flex-start;
+    
+    &__item { //Варианты
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      min-height: 23px;
+      padding-left: 23px;
+      color: @black;
+      cursor: pointer;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
-    &__input {
-        .is-hidden;
+
+    &__input { //выбор нужной кнопки
+        .is-hidden();
+            
         &:checked {
             & ~ .radio__marker {
-                background-color: @black;
-                
+                 background-color: @black;
             }
         }
     }
-    &__marker {
+
+    &__marker { //поддельная радио-кнопка
+        box-sizing: border-box;
+        display: block;
         position: absolute;
         left: 0;
         top: 0;
-        box-sizing: border-box;
         width: 23px;
         height: 23px;
-        border-radius: 50%;
         border: 2px solid @black;
+        border-radius: 50%;
         padding: 3px;
         background-clip: content-box;
         background-color: transparent;
         transition: background-color 0.2s;
-    }
-    &__label {
+      }
+
+    &__label {//подпись
         margin-left: 20px;
         font-weight: 400;
         font-size: 16px;
+        // line-height: 22px;
         line-height: 1.3;
-
     }
-}
+
+  }

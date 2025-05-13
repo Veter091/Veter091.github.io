@@ -1,17 +1,33 @@
 .pp {
+    //display flex раскрывает попап.
+    // display: flex;
     display: none;
-    display: flex;
     box-sizing: border-box;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 90px 40px 50px;
-    background-color: fade(grey,98%);
+    padding: 90px 100px 50px;
+    background-color: fade(@grey, 98%);
     overflow-y: auto;
     z-index: 110;
-    &__wrapper {
+
+    @media @bw1340 {
+      padding: 90px 40px 50px;
+    }
+
+    @media @bw768 {
+      padding: 80px 20px 40px;
+    }
+
+    @supports(backdrop-filter: blur(20px)){
+      background-color: fade(@black, 40%);
+      backdrop-filter: blur(20px);
+    };
+
+
+    &__wrapper{
         box-sizing: border-box;
         position: relative;
         display: flex;
@@ -24,28 +40,64 @@
         background-position: 0 0;
         background-size: auto;
         background-repeat: repeat;
-        box-shadow: 0px 0px 30px rgba(31, 31, 30, 0.55);
+        box-shadow: 0 0 30px rgba(31, 31, 30, 0.55);
 
-        @supports (backdrop-filter: blur(20px)) {
+        @supports (backdrop-filter: blur(20px)){
             box-shadow: none;
         }
     }
-    &__container {
+
+    &__container{
         box-sizing: border-box;
         width: 100%;
         max-width: 950px;
         margin: 0 auto;
         padding: 0 40px 40px;
-    }
+        @media @bw600 {
+          padding: 0 12px 40px;
+         }
+    }  
+
     &__title {
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        margin: -40px 0 70px -85px;
-        padding: 10px 85px;
-        
-
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      margin: -40px 0 70px -85px;
+      padding: 10px 85px;
+      max-width: 595px;
+      width: 100%;
+      min-height: 80px;
+      background-color: @black;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-family: @font2;
+      font-size: 22px;
+      line-height: 1.36;
+      color: @white;
+      letter-spacing: 0.02em;
+      z-index: 1;
+      @media @bw1170 {
+        max-width: 465px;
+        padding: 10px 60px 10px 20px;
+        margin: -40px 0 70px 0;
+      }
+      @media @bw768 {
+        margin: -40px 0 40px;
+        font-size: 18px;
+      }
+      @media @bw500 {
+        margin-right: 25px;
+        width: auto;
+        font-size: 14px;
+      }
+    }
+    
+    &__stiсky-close {
+      position: sticky;
+      top: 0;
+      align-self: flex-end;
+      width: 0;
+      height: 0;
     }
 
-    
 }
